@@ -1,0 +1,124 @@
+README TEMA 1 IOCLA
+
+
+
+
+TASK 1 - void touch()
+
+	- am parcurs ierarhia de directoare si fisiere pentru a verifica daca exista deja un fisier cu acelasi nume ca fisierul de introdus
+
+	- daca nu exista deja un fisier cu aceeasi denumire, fisierul primit ca parametru este inserat la sfarsitul listei de fisiere-copil ale directorului-parinte
+
+
+
+
+
+
+TASK 2 - void mkdir()
+
+	- am parcurs ierarhia de directoare si fisiere pentru a verifica daca exista deja un director cu aceeasi denumire ca directorul de introdus
+
+	- daca nu exista deja un director cu aceeasi denumire, directorul primit drept parametru este inserat la finalul listei de directoare-copil al directorului-parinte
+
+
+
+
+
+
+TASK 3 - void ls()
+
+	- am parcurs lista de directoare-copil ale directorului parinte si le-am afisat pe rand
+
+	- apoi am parcurs lista de fisiere-copil ale directorului parinte si le-am afisat pe rand
+
+
+
+
+
+
+TASK 4 - void rm()
+
+	- am parcurs lista de fisiere-copil ale directorului-parinte pana am gasit fisierul de sters 
+	- am golit memoria ocupata de el
+	- am rupt legatura cu fisierele de dianintea si de dupa el (daca exista)
+	- am facut legatura dintre fisierul de dinaintea si de dupa el (in toate cazurile: daca fisierul este singurul fisier din lista, daca este primul, daca este ultimul)
+
+
+
+
+
+
+TASK 5 - void rmdir()
+
+	- am parcurs lista de directoare-copil ale directorului-parinte pana am gasit directorul de sters 
+	- am golit memoria ocupata de el
+	- am rupt legatura cu directoarele de dinaintea si de dupa el (daca exista)
+	- am facut legatura dintre directorul de dinaintea si de dupa el (in toate cazurile: daca directorul este singurul directorul din lista, daca este primul, daca este ultimul)
+
+
+
+
+
+
+TASK 6 - void cd()
+
+	- am parcurs lista de directoare ale directorului curent
+
+	- cand am gasit directorul cu denumirea data ca parametru am atribuit lui target adresa directorului gasit dupa denumire
+
+
+
+
+
+
+
+TASK 7 - void tree()
+
+	- la fiecare apel am marit spatiul de afisare a fisierelor in functie de nivelul actual
+
+	- am parcurs lista de directoare de pe nivelul curent, am afisat la fiecare pas directorul curent si am apelat recursiv functia tree() pentru copilul directorului curent si pentru nivelul curent + 1
+
+	- apoi am parcurs si afisat fisierele din lista aceluiasi director parinte 
+
+
+
+
+
+
+TASK 8 - char *pwd()
+
+	- am parcurs parintii lui target si am pus fiecare denumire cu caracterele inversate intr-un sir de caractere "s"
+	(altfel calea ar fi fost de la target la home, nu de la home la target: /d4/d3/d2/home. De aceea am inserat fiecare denumire inversata 
+	/4d/3d/2d/emoh)
+
+	- dupa ce am terminat de parcurs si de inserat, am mai inversat o data sirul pana sa il returnez
+
+	(astfel din /4d/3d/2d/emoh, am obtinut calea asa cum trebuie: /home/d2/d3/d4.)
+
+
+
+
+
+
+int main()
+
+	- am creat primul director din sistem - radacina
+	- am citit datele de intrare (stdin)
+	- cu ajutorul unui pointer la char* am extras cuvintele din input
+	- in functie de comanda primita, accesata prin p, am apelat functia corespunzatoare
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
