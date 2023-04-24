@@ -1,0 +1,5 @@
+File System - C, Dynamic Programming and Data Structures
+
+• Built a CLI application that simulates the Linux file system commands.
+• Utilized dynamic memory allocation, dynamic data structures and I/O files in order to shape a process similar to the
+Linux command-line file manipulation (pwd, touch, mkdir, rm, rmdir, mv, ls, tree).
